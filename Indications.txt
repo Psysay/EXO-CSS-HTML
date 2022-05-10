@@ -1,0 +1,121 @@
+Vous avez dans ce dossier à ouvrir sur VS Code un index.html déjà travaillé
+(aucun changement de code ne doit être fait 
+- le texte peut-être modifié si vous le voulez (nom, prénom, etc))
+Votre travaille consiste à styliser ce code en CSS uniquement.
+Ce code ne respecte pas les bonnes pratiques, il ne faut pas se laisser pérturber.
+La feuille de style (vierge) a déjà était créée et relier à votre code, vous n'avez plus qu'à taper votre CSS dedans !
+
+Cette exercice a pour but de vous faire travailler sur un code qui n'est pas le votre, 
+et ainsi bosser sur votre compréhension de l'HTML.
+
+Pour mon style de maquette :
+
+Pour ma page web entière :
+- aucune marge externes, ni internes
+- aucune décoration
+- que mes blocs enfants ne dépassent jamais des blocs parents (en CSS -> box-sizing: border-box;)
+- utiliser la police poppins (déjà importée dans mon html)
+
+Pour mon bouton flèche permettant de remonter en haut de la page lors du scroll (indiqué sur le code) :
+- icon blanc
+- fond turquoise 
+- position fixe en bas de page à droite 
+Attention, le bouton ne doit pas être affiché tout le temps. 
+Pour les paramètres du bouton, vous les inscrivez normalement en CSS, mais vous rajouterez une propriété opacity : 0 ;
+C'est une propriété opacité, pour rendre notre bouton invisible.
+Ensuite vous créerez un deuxième sélecteur avec le nom du bouton suivi de .show { },
+et à l'inverse d'avant, ce bouton prendra la propriété opacity : 1 ; (pour le rendre à nouveau visible, 1 étant le maximum).
+la classe .show est lié au JavaScrit, c'est pourquoi vous ne la voyez pas.
+
+Chaque section étant un bloc principal, je veux un espacement en haut et en bas de chaque bloc section (plus estéthique)
+
+Pour mes blocs à l'intérieur de mes sections, nav, et footer :
+- une largeur maximale de 1300px
+- une marge intérieur de 0 vertical (haut et bas) et 80px horizontale (droite et gauche)
+- qu'ils soient centré
+
+Mon menu de navigation :
+- fixé 
+- horizontal (mon "logo" et mes liens de navigation sont alignés)
+- qu'il prenne toute la largeur disponible
+- police 'Ubuntu' 
+- Mon texte en blanc 
+- le lio de Portfolio en turquoise (code couleur : #0cabad)
+- au survol des liens du menu, la couleur affichée doit être également turquoise (code couleur : #0cabad)
+
+Pour la section home :
+- une image de fond qui fait toute la section, l'image appelée bannière
+- le texte en blanc
+- le nom Dev.co en gras et en grand
+- Web designer en turquoise et légèrement moins grand que Dev.co
+- "votre projet" en blanc sur fond turquoise (effet bouton), avec les coins légèrement arrondis.
+   Au survol, je veux que le fond devienne blanc, la bordure et le texte turquoise.
+- la photo nommé "silouhette" doit se placer à droite du bloc de façon à faire face au texte. Attention, c'est un png blanc, si vous ne le voyez pas ou très peu sur votre page internet sans CSS c'est normal (blanc sur blanc)
+
+Sans dimensions précises, je vous laisse ajuster la taille des éléments en fonctions de ce qui rend le plus attrayant.
+
+Section A propos :
+- fond blanc 
+- texte noir
+- titre et sous-titre centré
+- sous-titre en turquoise
+- image et desciption alignées
+- texte d'intro en gras et plus grand que le paragraphe dessous.
+- Web designer en turquoise
+- Donwload CV : texte blanc sur fond turquoise (type bouton similaire à "votre projet" dans la section home)
+
+Section Service :
+- fond noir
+- texte blanc
+- titre et sous-titre centré
+- sous-titre en turquoise
+- 3 blocs alignés (1 bloc = icone, titre, et description :
+	fond plus clair que noir  (#222)
+	texte blanc
+	icones en turquoise
+	titre et paragraphe centrés
+- chaque bloc au survol prend la couleur turquoise et l'icône devient blanche
+
+Section compétences :
+- même démarche que pour la section à propos
+- en dessous des titres, présence de 2 blocs (mes projets et la liste de compétence):
+   -> alignement de ces blocs.
+- Read more -> texte blanc sur fond turquoise (même démarche que pour le "bouton" download et votre projet)
+- Pour les barres de compétences :
+	Chaque compétences est suivie (un en dessous de l'autre) d'une barre indiquant le niveau de compétences:
+	*Pour réaliser cette barre il faut d'abord définir la barre complète.
+	Ici, line, a qui on va donner une hauteur (pour l'épaisseur), et une couleur de fond (par exemple lightgray)
+	Ensuite il faut définir le niveau pour chaque compétence, donc à vérifier le nom de la classe qu'on leur a donné.
+	Du coup, nous allons placer une barre de couleur au dessus de notre barre grise. 
+	Il faut donc commencer par positionner notre barre line en position relative.
+	Puis nous définissons notre barre HTML (par exemple), il faudra écrire en sélecteur html::before
+	Nous lui donnons une couleur, ici turquoise, puis une largeur (suivant le niveau de compétences atteint), une hauteur à 100%
+	-> vous pouvez mettre un width : 90% pour remplir la barre grise à 90%
+	Mais cette barre, pour la voir, il faut la placer en position absolute (en position top et left à 0)
+
+Section équipe :
+- construite de la même manière que compétences (fond noir, etc.)
+NB: les différents membres de l'équipe sont intégrés à un carrousel (fait en JS)
+- les cartes de membre de l'équipe sont construit comme les cartes compétences également:
+	fond #222, texte blanc, texte centré, et au survol le fond passe turquoise.
+- l'avatar de chaque membre sera rond et entouré d'une bordure turquoise. Au survol de la carte, la bordure passera blanche.
+NB : Si jamais votre image redimensionné se disproportionne, il suffit d'utiliser la propriété pour l'image      object-fit : cover ;
+- les owl-dot sont les commandes du carrousel (pour déplacer les membres de l'équipe), vous pouvez les styliser.
+   -> couleur turquoise
+   -> si un owl-dot est actif, je veux que sa taille soit plus large et que son fond soit rempli
+
+Section contact :
+La section contact se construit de la même manière que la section compétences ou a propos:
+- fond blanc, texte noir, sous titre turquoise, etc.
+- 2 blocs en dessous des titres , bloc restez en contact, et bloc formulaire, à aligner.
+	 
+Footer : 
+- fond noir
+- texte blanc
+- Le nom du créteur en turquoise
+
+Vous avez des éléments que vous ne connaissez pas qui ont été ajouté, pour tester votre capacité à appliquer un nouveau paramètre CSS.
+Surtout, amusez-vous (dans la mesure du possible), et testez des tonnes de choses !
+
+En cas de besoin, n'hésitez pas à me contacter,
+Bon Courage !

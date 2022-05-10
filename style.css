@@ -1,0 +1,343 @@
+body {
+    margin: none;
+    padding: none;
+    text-decoration: none;
+    font-family: poppins , sans-serif;
+    box-sizing: border-box;
+}
+
+.scroll-up-btn {
+    position: fixed;
+    right: 30px;
+    bottom: 5px;
+    padding: 7px;
+    color: white;
+    background-color: turquoise;
+    opacity: 0; 
+    border-radius: 5px;  
+}
+
+.show{
+    opacity: 1;
+}
+
+.nav .sticky {
+    
+    background-color: #0cabad;
+}
+
+.section{
+    padding: 2rem 0;
+    margin-bottom: 30px;
+}
+
+
+.max-width{
+    max-width: 1300px;
+    padding: 0px  80px ;
+    margin: auto;
+}
+
+
+.navbar{
+    width: 100%;
+    background-color:black;
+    position: fixed;
+    font-family: unbuntu;
+    z-index: 2;
+}
+
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+}
+
+ul{
+    list-style: none ;
+}
+
+.menu a,.logo a{
+    justify-content: space-around;
+    padding: 0px 15px;
+    color: white;
+} 
+
+.logo a{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.logo{
+    margin: 16px;
+}
+.logo span{
+    color: #0cabad ;
+}
+.max-width{
+max-width: 1150px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #0cabad ;
+}
+
+nav a:hover {
+color: #0cabad;
+}
+
+.home {
+    padding-top: 80px;
+     background-image: url("images/bannière.jpg") ; 
+     background-repeat: no-repeat;
+
+     background-color: black;
+     color: white;
+}
+
+.text-2 {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.text-3{
+    color: turquoise;
+    font-size: 1.3em ;
+}
+
+.home-content a{
+    color: white;
+    background-color: turquoise;
+    padding: 3px 5px ;
+    border-radius: 7px;
+    text-decoration: none;
+}
+
+.home-content a:hover{
+    color: turquoise;
+    background-color: white;
+    border: 1px;
+    border-color: turquoise;
+    border-radius: 7px;
+}
+.home .max-width {
+    display: flex ;
+    justify-content: space-between;
+
+}
+.portfolio-photo img{
+    left: 400px;
+    width: 100px;
+    margin: 50px;
+}
+.about{
+    background-color: white;
+    color: black;
+}
+
+.title{
+    text-align: center;
+}
+
+.about-content{
+    display: flex;
+}
+.text{
+    font-size: 1.2em ;
+    font-weight: bold;
+    text-align: center;
+}
+
+.text span{
+    color: turquoise;
+}
+
+.column-right a{
+    color: white;
+    background-color: turquoise;
+    border: 1px;
+    border-color: turquoise;
+    border-radius: 7px;
+    padding: 3px 5px ;
+}
+
+.column-right a:hover{
+    color: turquoise;
+    background-color: white;
+    border: 1px;
+    border-color: turquoise;
+    border-radius: 7px;
+}
+
+.services{
+    background-color: black;
+    color: white;
+}
+
+.services-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-content .text{
+    color: turquoise;
+}
+
+.services .box{
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+}
+.card .box {
+    background-color: #222;
+}
+
+.card i {
+    color: turquoise;
+}
+
+.card .box:hover{
+    background-color: turquoise;
+}
+
+.card:hover .text{
+    color: rgb(238, 238, 238);
+}
+.box:hover i{
+    color: white;
+}
+
+.skills-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills-content .text{
+    color: turquoise;
+}
+
+.skills a{
+    color: white;
+    background-color: turquoise;
+    border: 1px;
+    border-color: turquoise;
+    border-radius: 7px;
+    padding: 3px 5px ;
+}
+
+.skills a:hover{
+    color: turquoise;
+    background-color: white;
+    border: 1px;
+    border-color: turquoise;
+    border-radius: 7px;
+}
+
+.line{
+    height: 5px; 
+    width: 100%;
+    background-color: lightgray;
+    position: relative;
+}
+
+.html::before{
+    content: "";
+    background-color: turquoise;
+    height: 100%;
+    width: 80%;
+    position: absolute ;
+    top: 0px;
+    left: 0px;
+}
+
+.css::before{
+    content: "";
+    background-color: turquoise;
+    height: 100%;
+    width: 60%;
+    position: absolute ;
+    top: 0px;
+    left: 0px;
+}
+
+.js::before{
+    content: "";
+    background-color: turquoise;
+    height: 100%;
+    width: 5%;
+    position: absolute ;
+    top: 0px;
+    left: 0px;
+}
+
+.sql::before{
+    content: "";
+    background-color: turquoise;
+    height: 100%;
+    width: 10%;
+    position: absolute ;
+    top: 0px;
+    left: 0px;
+}
+
+.teams{
+    background-color: black;
+    color: white;
+}
+
+.teams .box{
+    background-color: #222;
+    color: white;
+    text-align: center;
+    border-radius: 7px;
+}
+
+
+.teams .box:hover{
+    background-color: turquoise;
+}
+.teams .box img{
+    display: inline-block !important;
+    text-align: center;
+    border-radius: 50%;
+    border: solid turquoise 3px;
+    width: 75% !important;
+
+}
+
+.teams .box img:hover{
+    border: solid white 3px;
+
+}
+
+.owl-dots{
+    margin-left: 20px;
+}
+
+.owl-dot{
+    height: 15px;
+    width: 15px;
+    border: 2px solid  turquoise !important;
+    border-radius: 25px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+
+.owl-dot:hover{
+    background-color: turquoise !important;
+    border: 2px solid white !important;
+    width: 45px;
+}
+
+.contact{
+    background-color: white;
+    color: black;
+}
+
+.contact .text{
+    color: turquoise;
+}
